@@ -8,5 +8,12 @@ if (environment.production) {
   enableProdMode();
 }
 
-platformBrowserDynamic().bootstrapModule(AppModule)
-  .catch(err => console.error(err));
+document.addEventListener('DOMContentLoaded', () => {
+  platformBrowserDynamic().bootstrapModule(AppModule).then(() => {
+    setTimeout(() => {
+      const preloader: any = document.querySelectorAll('.preloader')[0];
+      document.body.removeChild(preloader);
+    }, 1000);
+  })
+    .catch(err => console.error(err));
+});
