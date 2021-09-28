@@ -1,3 +1,20 @@
 :host{
-    width: 68%;
+    width: 100%;
+    .content{
+        display: flex;
+        max-height: 38em;
+
+        textarea{
+            flex: 1;
+            line-height: 1.6em;
+            font-size: 16px;
+            border: 1px solid gainsboro;
+            border-radius: 5px;
+        }
+        .preview{
+            flex: 1;
+            border: 1px solid gainsboro;
+            overflow: auto;
+        }
+    }
 }

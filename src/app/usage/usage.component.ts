@@ -10,6 +10,7 @@ import { Observable } from 'rxjs';
 export class UsageComponent implements OnInit {
 
   content = '';
+  desc = '';
   constructor(
     private httpClient: HttpClient
   ) { }
@@ -17,7 +18,7 @@ export class UsageComponent implements OnInit {
 
   ngOnInit(): void {
     this.getDoc().subscribe((e) => {
-      this.content = e;
+      this.desc = e;
     });
   }
 

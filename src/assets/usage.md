@@ -1,34 +1,7 @@
-# 安装
+> 考虑到其他原因，对编辑器与预览进行了拆分，所以这部分只考虑预览部分的需求
 
-```bash
-npm i ng-marked-preview
-```
-# 说明
+# 需求
 
-> 当前最新版本：0.0.2，在线尝试示例[]()
+- 需要抛出事件
 
-# 引入样式
-
-在`angular.json`中引入
-
-```json
-{
-  "styles": [
-    "node_modules/ng-marked-preview/style/theme/default.less"
-  ]
-}
-```
-
-在`style.less`中引入
-
-```less
-@import "~ng-marked-preview/style/theme/default.less";
-```
-
-
-在`style.css`中引入
-```css
-@import "~ng-marked-preview/style/theme/default.css";
-```
-
-# 引入组件模块
+更多需求请提到[github](https://github.com/WYMDocs/ng-marked-view-desc/issues)上

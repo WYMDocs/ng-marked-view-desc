@@ -1,1 +1,5 @@
-<lib-ng-marked-preview [context]="content"></lib-ng-marked-preview>
+<div class="content">
+    <textarea rows="16" placeholder="输入marked文档" [(ngModel)]="content"></textarea>
+    <lib-ng-marked-preview class="preview" [context]="content"></lib-ng-marked-preview>
+</div>
+<lib-ng-marked-preview class="preview" [context]="desc"></lib-ng-marked-preview>

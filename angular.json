@@ -36,7 +36,12 @@
             "styles": [
               "src/styles.less"
             ],
-            "scripts": []
+            "scripts": [],
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "node_modules/highlight.js/scss"
+              ]
+            }
           },
           "configurations": {
             "production": {

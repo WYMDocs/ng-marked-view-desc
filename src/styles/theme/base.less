@@ -1,0 +1,159 @@
+@per-unut: 1/16em;
+
+// 符号字体
+@font-face {
+    font-family: 'mathChar';
+    src: url(./../../assets/fonts/KaTeX_Math-Italic.woff2);
+}
+
+.ng-editor-md-workspace-display {
+    background: #fff;
+    margin: 16px;
+    padding: 16px;
+    font-size: 1em;
+    margin: 0;
+    table,
+    .table {
+        border: @per-unut solid gainsboro;
+        width: 100%;
+        border-spacing: unset;
+        border-collapse: collapse;
+
+        th {
+            padding: @per-unut * 10;
+            border: @per-unut solid gainsboro;
+            background: #eaeaea;
+        }
+
+        tr {}
+
+        td {
+            border: @per-unut solid gainsboro;
+            padding: @per-unut * 10;
+        }
+
+    }
+
+    h1 {
+        font-size: @per-unut * 20;
+        padding: @per-unut * 10 0 @per-unut * 10 0;
+        margin: 0;
+        font-weight: 700;
+    }
+
+    h2 {
+        font-size: @per-unut * 18;
+        padding: @per-unut * 10 0 @per-unut * 10 0;
+        margin: 0;
+        font-weight: 700;
+    }
+
+    h3 {
+        font-size: @per-unut * 16;
+        padding: @per-unut * 10 0 @per-unut * 10 0;
+        margin: 0;
+        font-weight: 700;
+    }
+
+    h4 {
+        font-size: @per-unut * 14;
+        padding: @per-unut * 10 0 @per-unut * 10 0;
+        margin: 0;
+        font-weight: 700;
+    }
+
+    h5 {
+        font-size: @per-unut * 12;
+        padding: @per-unut * 10 0 @per-unut * 10 0;
+        margin: 0;
+        font-weight: 700;
+    }
+
+    h6 {
+        font-size: @per-unut * 10;
+        padding: @per-unut * 10 0 @per-unut * 10 0;
+        margin: 0;
+        font-weight: 700;
+    }
+
+    code {
+        font-size: @per-unut * 8.7;
+        color: #e83e8c;
+        word-wrap: break-word;
+    }
+
+    kbd {
+        border: 1px solid #b1b1b1;
+        padding: 0 3px;
+        box-shadow: 1px 1px 1px gainsboro;
+    }
+
+    pre {
+        // background: #3c3c3c;
+        color: #a9b7c6;
+        position: relative;
+        overflow: hidden;
+        padding: 2em;
+        margin: 1em 0;
+        border: 1px solid gainsboro;
+        border-radius: 5px;
+
+        &::before {
+            background: url(./../../assets/img/pre.png) no-repeat;
+            background-size: contain;
+            width: 3em;
+            content: " ";
+            position: absolute;
+            left: 0.6em;
+            top: 0.4em;
+        }
+
+        &:hover {
+            .code-copy {
+                top: .4em;
+                display: inline-block;
+            }
+        }
+    }
+
+    .katex {
+        font-family: mathChar;
+    }
+
+    .katex-mathml {
+        display: none;
+    }
+
+    blockquote {
+        margin: @per-unut*20 0;
+        padding: .5em 1.2em;
+        line-height: 2em;
+        background-color: #ececec;
+        border-left: 5px solid #35b378;
+        display: block;
+    }
+
+    br {
+        font-size: @per-unut;
+    }
+
+    dl,
+    ol,
+    ul {
+        margin-top: 0;
+        margin-bottom: 1em;
+
+        li {
+            padding: 6 * @per-unut 0;
+        }
+    }
+
+    .code-copy {
+        position: absolute;
+        top: 0.1em;
+        right: 0.1em;
+        font-size: 0.6em;
+        display: none;
+        cursor: pointer;
+    }
+}
