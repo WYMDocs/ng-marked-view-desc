@@ -5,15 +5,19 @@ npm i ng-marked-preview
 ```
 
 ```bash
-npm i highlight.js --save
+npm i highlight.js --save #代码高亮
 ```
 
 ```bash
-npm i katex --save
+npm i katex --save #数学公式
 ```
 
 ```bash
-npm i marked --save
+npm i marked --save #文本编译为md文档
+```
+
+```bash
+npm i mermaid --save #流程图等
 ```
 
 关于依赖安装，下个版本更新会加入依赖中，就不需要单独安装包

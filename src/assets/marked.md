@@ -36,3 +36,12 @@ class TsCode{
 $$
 \sum_{i=0}^N\int_{a}^{b}g(t,i)\text{d}t
 $$
+
+```mermaid
+graph TD
+    A[Christmas] -->|Get money| B(Go shopping)
+    B --> C{Let me think}
+    C -->|One| D[Laptop]
+    C -->|Two| E[iPhone]
+    C -->|Three| F[fa:fa-car Car]
+```
