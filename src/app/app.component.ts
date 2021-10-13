@@ -1,6 +1,6 @@
 import { Component, EventEmitter } from '@angular/core';
 import { Router } from '@angular/router';
-import { throttleTime } from 'rxjs/operators';
+import { delay, throttleTime } from 'rxjs/operators';
 
 @Component({
   selector: 'app-root',
@@ -17,8 +17,8 @@ export class AppComponent {
   constructor(
     private router: Router
   ) {
-    this.colorEvent.pipe(throttleTime(2000)).subscribe((res) => {
-      console.log(res);
+    this.colorEvent.subscribe((res) => {
+      document.documentElement.style.setProperty(`--main-bg-color`, res);
     });
   }
   gotoPage(path: string): void {
