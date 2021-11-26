@@ -1,0 +1,157 @@
+/* You can add global styles to this file, and also import other style files */
+pre code.hljs{display:block;overflow-x:auto;padding:1em}
+code.hljs{padding:3px 5px}
+.hljs{color:#abb2bf;background:#282c34}
+.hljs-comment,.hljs-quote{color:#5c6370;font-style:italic}
+.hljs-doctag,.hljs-formula,.hljs-keyword{color:#c678dd}
+.hljs-deletion,.hljs-name,.hljs-section,.hljs-selector-tag,.hljs-subst{color:#e06c75}
+.hljs-literal{color:#56b6c2}
+.hljs-addition,.hljs-attribute,.hljs-meta .hljs-string,.hljs-regexp,.hljs-string{color:#98c379}
+.hljs-attr,.hljs-number,.hljs-selector-attr,.hljs-selector-class,.hljs-selector-pseudo,.hljs-template-variable,.hljs-type,.hljs-variable{color:#d19a66}
+.hljs-bullet,.hljs-link,.hljs-meta,.hljs-selector-id,.hljs-symbol,.hljs-title{color:#61aeee}
+.hljs-built_in,.hljs-class .hljs-title,.hljs-title.class_{color:#e6c07b}
+.hljs-emphasis{font-style:italic}
+.hljs-strong{font-weight:700}
+.hljs-link{text-decoration:underline}
+@font-face {
+  font-family: 'mathChar';
+  src: url('KaTeX_Math-Italic.woff2');
+}
+.ng-editor-md-workspace-display {
+  background: #fff;
+  margin: 16px;
+  padding: 16px;
+  font-size: 1em;
+  margin: 0;
+}
+.ng-editor-md-workspace-display table,
+.ng-editor-md-workspace-display .table {
+  border: 0.0625em solid gainsboro;
+  width: 100%;
+  border-spacing: unset;
+  border-collapse: collapse;
+}
+.ng-editor-md-workspace-display table th,
+.ng-editor-md-workspace-display .table th {
+  padding: 0.625em;
+  border: 0.0625em solid gainsboro;
+  background: #eaeaea;
+}
+.ng-editor-md-workspace-display table td,
+.ng-editor-md-workspace-display .table td {
+  border: 0.0625em solid gainsboro;
+  padding: 0.625em;
+}
+.ng-editor-md-workspace-display h1 {
+  font-size: 1.25em;
+  padding: 0.625em 0 0.625em 0;
+  margin: 0;
+  font-weight: 700;
+}
+.ng-editor-md-workspace-display h2 {
+  font-size: 1.125em;
+  padding: 0.625em 0 0.625em 0;
+  margin: 0;
+  font-weight: 700;
+}
+.ng-editor-md-workspace-display h3 {
+  font-size: 1em;
+  padding: 0.625em 0 0.625em 0;
+  margin: 0;
+  font-weight: 700;
+}
+.ng-editor-md-workspace-display h4 {
+  font-size: 0.875em;
+  padding: 0.625em 0 0.625em 0;
+  margin: 0;
+  font-weight: 700;
+}
+.ng-editor-md-workspace-display h5 {
+  font-size: 0.75em;
+  padding: 0.625em 0 0.625em 0;
+  margin: 0;
+  font-weight: 700;
+}
+.ng-editor-md-workspace-display h6 {
+  font-size: 0.625em;
+  padding: 0.625em 0 0.625em 0;
+  margin: 0;
+  font-weight: 700;
+}
+.ng-editor-md-workspace-display code {
+  font-size: 0.54375em;
+  color: #e83e8c;
+  word-wrap: break-word;
+}
+.ng-editor-md-workspace-display kbd {
+  border: 1px solid #b1b1b1;
+  padding: 0 3px;
+  box-shadow: 1px 1px 1px gainsboro;
+}
+.ng-editor-md-workspace-display pre {
+  color: #a9b7c6;
+  position: relative;
+  overflow: hidden;
+  padding: 2em;
+  margin: 1em 0;
+  border: 1px solid gainsboro;
+  border-radius: 5px;
+}
+.ng-editor-md-workspace-display pre::before {
+  background: url('pre.png') no-repeat;
+  background-size: contain;
+  width: 3em;
+  content: " ";
+  position: absolute;
+  left: 0.6em;
+  top: 0.4em;
+}
+.ng-editor-md-workspace-display pre:hover .code-copy {
+  top: 0.4em;
+  display: inline-block;
+}
+.ng-editor-md-workspace-display .katex {
+  font-family: mathChar;
+}
+.ng-editor-md-workspace-display .katex-mathml {
+  display: none;
+}
+.ng-editor-md-workspace-display blockquote {
+  margin: 1.25em 0;
+  padding: 0.5em 1.2em;
+  line-height: 2em;
+  background-color: #ececec;
+  border-left: 5px solid #35b378;
+  display: block;
+}
+.ng-editor-md-workspace-display br {
+  font-size: 0.0625em;
+}
+.ng-editor-md-workspace-display dl,
+.ng-editor-md-workspace-display ol,
+.ng-editor-md-workspace-display ul {
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+.ng-editor-md-workspace-display dl li,
+.ng-editor-md-workspace-display ol li,
+.ng-editor-md-workspace-display ul li {
+  padding: 0.375em 0;
+}
+.ng-editor-md-workspace-display .code-copy {
+  position: absolute;
+  top: 0.1em;
+  right: 0.1em;
+  font-size: 0.6em;
+  display: none;
+  cursor: pointer;
+}
+:root {
+  --main-bg-color: brown;
+}
+
+:root {
+    --main-bg-color: blue;
+}
+
+/*# sourceMappingURL=styles.css.map*/
